@@ -1,6 +1,6 @@
 import React from "react";
 import "./Programstyle.scss";
-//import programImage from "/assets/programacao.png"; // Substitua o caminho pela localização correta da imagem
+import programImage from "/assets/programacao.png"; // Substitua o caminho pela localização correta da imagem
 
 const ProgramPage = () => {
   return (
