@@ -1,0 +1,90 @@
+@import "../../responsive.scss";
+
+.footer {
+  background-color: #2A0049;
+  color: #ffffff;
+  padding: 50px 0;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include md {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-section {
+      flex: 1;
+      margin: 20px;
+      max-width: 250px;
+
+      .section-title {
+        font-size: 24px;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 10px;
+
+          a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+
+            &:hover {
+              color: #6b1ac1;
+            }
+          }
+        }
+      }
+
+      .social-links {
+        display: flex;
+        gap: 2px;
+        list-style-type: none;
+        justify-content: start;
+
+        ol {
+          list-style-type: none;
+        }
+
+        ol > li > a > img{
+          transition: color 0.3s;
+          width: 30px;
+          gap: 20px;
+
+          &:hover {
+            color: #6b1ac1;
+          }
+
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #6b1ac1;
+
+    p {
+      font-size: 14px;
+      color: #999999;
+    }
+  }
+}

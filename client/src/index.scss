@@ -1,0 +1,21 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+  font-family: "Lato", sans-serif;
+  overflow: auto;
+  
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Para Chrome, Safari e Edge */
+  scrollbar-width: none;
+}

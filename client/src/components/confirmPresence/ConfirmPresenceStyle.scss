@@ -1,0 +1,54 @@
+@import "../../responsive.scss";
+
+.confirm-presence-page {
+    background-color: #0e0e0e;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+
+    @include sm {
+      padding: 20px;
+      min-height: 75vh;
+    }
+  
+    .confirmation-box {
+      background-color: #f4f4f4;
+      border-radius: 8px;
+      padding: 40px;
+      text-align: center;
+  
+      h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+  
+      p {
+        font-size: 15px;
+        margin-bottom: 20px;
+        color: #555;
+      }
+  
+      button {
+        padding: 10px 20px;
+        background-color: #832b83;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #83228b;
+        }
+      }
+  
+      .error {
+        color: #ff3d3d;
+        margin-top: 10px;
+      }
+    }
+  }
+  
