@@ -17,8 +17,8 @@ const ConfirmPresence = () => {
     try {
       // Define a URL e o tipo de evento com base no tipo de evento
       const presenceUrl = type === "minicourse" 
-        ? `https://cd4a-2804-29b8-500a-1274-e81e-e223-a60-a299.ngrok-free.app//minicourses/auth/${eventId}` 
-        : `https://cd4a-2804-29b8-500a-1274-e81e-e223-a60-a299.ngrok-free.app//lectures/auth/${eventId}`;
+        ? `https://wtisc1.up.railway.app/minicourses/auth/${eventId}` 
+        : `https://wtisc1.up.railway.app/lectures/auth/${eventId}`;
 
       const eventType = type.toUpperCase();
 
@@ -31,7 +31,7 @@ const ConfirmPresence = () => {
 
       if (presenceResponse.status === 200) {
         // Se o PUT foi bem-sucedido, envia o POST para gerar o certificado
-        const certificateResponse = await axios.post('https://cd4a-2804-29b8-500a-1274-e81e-e223-a60-a299.ngrok-free.app//certificates/', {
+        const certificateResponse = await axios.post('https://wtisc1.up.railway.app/certificates/', {
           eventId: eventId,
           eventType: eventType,
         }, {

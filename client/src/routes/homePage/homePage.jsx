@@ -15,7 +15,7 @@ function HomePage() {
       <div>
         <div className="homePage">
           <div className="imgContainer">
-            <img src="/bg.png" alt="Workshop" />
+            <img src="src/assets/bg.png" alt="Workshop" />
           </div>
           <div className="textContainer">
             <div className="wrapper">

@@ -10,7 +10,7 @@ const LecturePage = () => {
   useEffect(() => {
     const fetchLectureDetails = async () => {
       try {
-        const response = await fetch(`https://cd4a-2804-29b8-500a-1274-e81e-e223-a60-a299.ngrok-free.app//lectures/${id}`);
+        const response = await fetch(`https://wtisc1.up.railway.app/lectures/${id}`);
         const data = await response.json();
         setLecture(data);
         setLoading(false);
