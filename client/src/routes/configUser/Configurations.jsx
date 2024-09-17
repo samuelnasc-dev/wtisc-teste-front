@@ -39,7 +39,7 @@ const Configurations = () => {
 
       // Requisição PUT para atualizar o nome/sobrenome
       const response = await axios.put(
-        `https://wtisc1.up.railway.app/users/${userId}`,
+        `https://cd4a-2804-29b8-500a-1274-e81e-e223-a60-a299.ngrok-free.app//users/${userId}`,
         payload,
         { withCredentials: true }
       );
@@ -62,11 +62,11 @@ const Configurations = () => {
   const handleAccountDeletion = async () => {
     try {
       const subscriptionsResponse = await axios.get(
-        "https://wtisc1.up.railway.app/users/subscriptions",
+        "https://cd4a-2804-29b8-500a-1274-e81e-e223-a60-a299.ngrok-free.app//users/subscriptions",
         { withCredentials: true }
       );
       const certificatesResponse = await axios.get(
-        "https://wtisc1.up.railway.app/users/certificates",
+        "https://cd4a-2804-29b8-500a-1274-e81e-e223-a60-a299.ngrok-free.app//users/certificates",
         { withCredentials: true }
       );
 
@@ -95,7 +95,7 @@ const Configurations = () => {
       }, 5000);
 
       const response = await axios.delete(
-        `https://wtisc1.up.railway.app/users/${userId}`,
+        `https://cd4a-2804-29b8-500a-1274-e81e-e223-a60-a299.ngrok-free.app//users/${userId}`,
         { withCredentials: true }
       );
 
@@ -147,7 +147,7 @@ const Configurations = () => {
       }
 
       const response = await axios.put(
-        `https://wtisc1.up.railway.app/users/${userId}`,
+        `https://cd4a-2804-29b8-500a-1274-e81e-e223-a60-a299.ngrok-free.app//users/${userId}`,
         { password: passwords.newPassword },
         { withCredentials: true }
       );
