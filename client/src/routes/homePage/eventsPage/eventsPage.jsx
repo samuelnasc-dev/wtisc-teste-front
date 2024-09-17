@@ -14,8 +14,8 @@ function EventsPage() {
     const fetchData = async () => {
       try {
         const endpoint = activeTab === "palestras"
-          ? 'https://wtisc1.up.railway.app/lectures'
-          : 'https://wtisc1.up.railway.app/minicourses';
+          ? 'https://5daa-2804-29b8-500a-1274-e81e-e223-a60-a299.ngrok-free.app/lectures'
+          : 'https://5daa-2804-29b8-500a-1274-e81e-e223-a60-a299.ngrok-free.app/minicourses';
 
         const response = await fetch(endpoint);
         const result = await response.json();

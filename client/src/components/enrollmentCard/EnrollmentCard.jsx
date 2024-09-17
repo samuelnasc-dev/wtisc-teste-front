@@ -58,7 +58,7 @@ const EnrollmentCard = ({ title, availableSpots, eventId, eventType }) => {
 
     const checkEnrollment = async (userId) => {
       try {
-        const response = await fetch('https://wtisc1.up.railway.app/users/subscriptions/', {
+        const response = await fetch('https://5daa-2804-29b8-500a-1274-e81e-e223-a60-a299.ngrok-free.app/users/subscriptions/', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -104,7 +104,7 @@ const EnrollmentCard = ({ title, availableSpots, eventId, eventType }) => {
       if (userData) {
         const user = JSON.parse(userData);
         const response = await axios.post(
-          `https://wtisc1.up.railway.app/subscriptions/${eventType === 'lecture' ? 'lectures' : 'minicourses'}/`,
+          `https://5daa-2804-29b8-500a-1274-e81e-e223-a60-a299.ngrok-free.app/subscriptions/${eventType === 'lecture' ? 'lectures' : 'minicourses'}/`,
           { [eventType === 'lecture' ? 'lectureId' : 'minicourseId']: eventId },
           { withCredentials: true, headers: { 'Authorization': `Bearer ${user.id}` } } // Adiciona o ID do usuário ao header
         );
